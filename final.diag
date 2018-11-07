@@ -1,0 +1,16 @@
+nwdiag {
+  Internet [shape = cloud];
+  Internet -- Router;
+
+  network internal_1 {
+      address = "192.168.2.x/24"
+      Router;
+      Raspberry-PI;
+  }
+  network internal_2 {
+      Raspberry-PI;
+      Host_00 [address = ".100"]; 
+      Host_01 [address = ".101"];
+      Host_02 [address = ".102"];
+  }
+}
