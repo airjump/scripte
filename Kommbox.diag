@@ -1,9 +1,6 @@
 rackdiag {
-  // Change order of rack-number as ascending
-  ascending;
-
   // define height of rack
-  12U;
+  8U;
 
   // define description of rack
   description = "Kommunikationsbox";
@@ -12,7 +9,7 @@ rackdiag {
   1: USV [2U];   // define height of unit
   3: Server 
   4: Telefonanalge
-  5: Funkgerät-1
-  5: Funkgerät-2
-  6: L3 Switch
+  6: Funkgerät-1
+  6: Funkgerät-2
+  7: L3 Switch
 }
