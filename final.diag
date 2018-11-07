@@ -6,6 +6,7 @@ nwdiag {
       address = "192.168.2.x/24"
       Router;
       Raspberry-PI;
+      PC;
   }
   network internal_2 {
       Raspberry-PI;
