@@ -1,14 +1,15 @@
 nwdiag {
   Internet [shape = cloud];
-  Internet -- router;
+  Internet -- Router;
 
-  network ISP {
-      router;
+  network internal_1 {
+      Router;
       Raspberry-PI;
   }
-  network internal {
+  network internal_2 {
+      address = "192.168.2.x/24"
       Raspberry-PI;
-      Host_01;
-      Host_02;
+      Host_01 [address = "192.168.2.100"];
+      Host_02 [address = "192.168.2.101"];
   }
 }
