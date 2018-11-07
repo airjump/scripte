@@ -1,0 +1,9 @@
+nwdiag {
+  Internet [shape = cloud];
+  Internet -- router;
+
+  network {
+    router;
+    Raspberry PI;
+  }
+}
