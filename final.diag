@@ -6,12 +6,16 @@ nwdiag {
       address = "192.168.2.x/24"
       Router;
       Raspberry-PI;
-      PC;
   }
   network internal_2 {
       Raspberry-PI;
       Host_00 [address = ".100"]; 
       Host_01 [address = ".101"];
       Host_02 [address = ".102"];
+  }
+  network direct {
+      address = "172.16.100.x/29"
+      Raspberry-PI; [address = ".2"];
+      PC; [address = ".3"];
   }
 }
