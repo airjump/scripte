@@ -1,0 +1,14 @@
+nwdiag {
+  Internet [shape = cloud];
+  Internet -- router;
+
+  network ISP {
+      router;
+      Raspberry-PI;
+  }
+  network internal {
+      Raspberry-PI;
+      Host_01;
+      Host_02;
+  }
+}
