@@ -8,7 +8,7 @@ rackdiag {
   // define rack units
   1: USV [2U];   // define height of unit
   3: Server 
-  4: Telefonanalge
+  4: Telefonanalge [2U];
   6: Funkgerät-1
   6: Funkgerät-2
   7: L3 Switch
