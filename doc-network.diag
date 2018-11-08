@@ -1,0 +1,23 @@
+nwdiag
+{
+Internet [shape = cloud];
+Internet -- Router;
+
+network direct {
+    address = "172.16.100.x/29"
+    Raspberry-PI [address = ".2 on eth0"];
+    PC [address = ".3"];
+    }
+network internal_1 {
+    address = "192.168.2.x/24"
+    Router;
+    Raspberry-PI [address="bridge br0 eth1"];
+    }
+network internal_2 {
+    address = "192.168.2.x/24"
+    Raspberry-PI [address="bridge br0 eth2"];
+    Host_00 [address = ".100"];
+    Host_01 [address = ".101"];
+    Host_02 [address = ".102"];
+    }
+}
